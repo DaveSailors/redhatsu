@@ -1,0 +1,18 @@
+#!/bin/bash -o verbose
+
+$ToHost=$1
+$FILE=$2
+
+/usr/bin/ftp -n <<EOF
+open $ToHost
+ls
+passive
+cd /htdocs/redhatsu
+!pwd
+bin
+put $FILE
+chmod 775 $FILE
+quit
+EOF
+
+
