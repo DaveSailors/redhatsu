@@ -15,4 +15,5 @@ chmod 775 $FILE
 quit
 EOF
 
+echo rc = $?
 
