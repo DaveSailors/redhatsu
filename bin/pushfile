@@ -1,6 +1,6 @@
 #!/bin/bash
-$ToHost=$1
-$FILE=$2
+ToHost=$1
+FILE=$2
 /usr/bin/ftp -n <<EOF
 open $ToHost
 ls
