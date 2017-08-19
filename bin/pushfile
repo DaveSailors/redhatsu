@@ -1,8 +1,7 @@
 #!/bin/bash
 ToHost=$1
 FILE=$2
-/usr/bin/ftp -n <<EOF
-open $ToHost
+/usr/bin/ftp $ToHost <<EOF
 ls
 passive
 cd /htdocs/redhatsu
