@@ -1,3 +1,5 @@
 #!/bin/bash
 tar cvf Mydir.tar Mydir
 tar cvf bin.tar usr/local/bin
+gzip *.tar
+tar cvf bundle.tar *.gz
