@@ -4,4 +4,8 @@ alias lsdr='ls -ltr | grep "^d"'
 alias lsr='ls -ltr'
 alias dusk='du -sk * | sort -rn | head -12'
 
+export PATH=$PATH:/usr/local/bin
+
 set -o vi
+
+
