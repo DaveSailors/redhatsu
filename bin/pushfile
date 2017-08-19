@@ -3,12 +3,16 @@ ToHost=$1
 FILE=$2
 /usr/bin/ftp $ToHost <<EOF
 ls
-passive
-cd /htdocs/redhatsu
-!pwd
+cd htdocs
+pwd
+ls 
+cd redhatsu
+pwd
+ls
 bin
 put $FILE
 chmod 775 $FILE
+ls 
 quit
 EOF
 
