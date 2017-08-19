@@ -1,8 +1,6 @@
-#!/bin/bash -o verbose
-
+#!/bin/bash
 $ToHost=$1
 $FILE=$2
-
 /usr/bin/ftp -n <<EOF
 open $ToHost
 ls
@@ -14,7 +12,4 @@ put $FILE
 chmod 775 $FILE
 quit
 EOF
-echo "end of push"
-
-echo rc = $?
 
