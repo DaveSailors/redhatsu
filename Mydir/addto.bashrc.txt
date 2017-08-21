@@ -4,6 +4,27 @@ alias lsdr='ls -ltr | grep "^d"'
 alias lsr='ls -ltr'
 alias dusk='du -sk * | sort -rn | head -12'
 
+# - my functions
+#
+#---------- 
+# glog "7 days ago"
+# or
+# glog "7 days ago" "bob"
+#
+glog ()
+{
+    if [ -z "$2" ]; then
+       git log --all --pretty=format:'%h %cd %s (%an)' --since="$1"
+    else
+       git log --all --pretty=format:'%h %cd %s (%an)' --since="$1" --author="$2"
+    fi
+}
+#---------- 
+
+
+
+
+
 export PATH=$PATH:/usr/local/bin
 
 set -o vi
