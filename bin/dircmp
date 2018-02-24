@@ -1,4 +1,4 @@
-#!/bin/ksh
+#!/bin/bash
 #
 #
 # A simple script that will compare the files and folders under two
