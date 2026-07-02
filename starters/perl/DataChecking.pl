@@ -28,4 +28,3 @@ print("Hey - who do you think you're kidding?\n");
 
 }
 
-Read more at http://www.devshed.com/c/a/Perl/String-Processing-with-Perl/7/#c76cHL33gIVHQwVD.99
